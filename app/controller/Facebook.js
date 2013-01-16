@@ -58,7 +58,7 @@ Ext.define('TH.controller.Facebook', {
 
            // Ext.get('splashLoader').destroy();
             //Ext.get('rwf-body').addCls('greyBg');
-            Ext.fly('loading').destroy();
+            Ext.fly('appLoadingIndicator').destroy();
             if (response.status == 'connected') {
                 me.onLogin();
             } else {

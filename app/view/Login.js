@@ -6,7 +6,7 @@ Ext.define('TH.view.Login', {
 	config: {
 
 		layout: 'fit',
-		cls: 'loggedOut',
+		cls: 'login',
 
 		items: [
 			{

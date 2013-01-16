@@ -17,9 +17,23 @@
 @include sencha-msgbox;
 
 // Your custom code goes here...
-.fbLogin {
-  //@include background-sprite(0, -147px);
+$bg-sprite-image:   "../images/bg-sprites.png";
 
+@mixin background-sprite($x, $y) {
+  background: url($bg-sprite-image) repeat-x;
+  background-size: 1px 558px;
+
+  @if $x != null { background-position-x: $x; }
+  @if $y != null { background-position-y: $y; }
+}
+
+.login {
+  background-color: #8fbc34;
+}
+
+.fbLogin {
+  @include background-sprite(0, -147px);
+  font-color: #fff;
   margin-bottom: 15px;
   width: 230px;
   line-height: 35px;
